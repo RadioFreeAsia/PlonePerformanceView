@@ -1,0 +1,16 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:mail="http://namespaces.zope.org/mail"
+           xmlns:i18n="http://namespaces.zope.org/i18n"
+           >
+           
+  <browser:page
+    for="*"
+    name="profiler"
+    class=".profiler.Profiler"
+    permission="zope2.View"
+    allowed_attributes="start
+                        stop"
+    />
+    
+</configure>
